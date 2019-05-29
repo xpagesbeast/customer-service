@@ -9,8 +9,8 @@ Create a table called 'customer'.  This will be the table to store the records (
 
 create table customer(
 id int NOT NULL AUTO_INCREMENT,
-first_name varchar(20),
-last_name varchar(20),
+name varchar(50),
+address varchar(100),
 PRIMARY KEY (ID)
 )
 
