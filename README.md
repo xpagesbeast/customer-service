@@ -55,8 +55,8 @@ Sample output:
     "_embedded": {
         "customers": [
             {
-                "firstName": "Peter",
-                "lastName": "Parker",
+                "name": "Target",
+                "address": "5555 Touhy, Niles, IL",
                 "_links": {
                     "self": {
                         "href": "http://localhost:8080/customers/1"
@@ -67,8 +67,8 @@ Sample output:
                 }
             },
             {
-                "firstName": "Bruce",
-                "lastName": "Wayne",
+                "name": "Walmart",
+                "address": "5454 Touhy, Niles, IL",
                 "_links": {
                     "self": {
                         "href": "http://localhost:8080/customers/2"
