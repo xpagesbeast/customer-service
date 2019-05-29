@@ -21,25 +21,34 @@ Give the user 'test' access to the schema 'customer'.  Use select all in MySQL M
 If you already have a MySQL environment and want to use it.  Simply edit the file application.properties.
 
 spring.datasource.name=customer-datasource
+
 spring.datasource.url=jdbc:mysql://localhost:3306/customer?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+
 spring.datasource.username=
+
 spring.datasource.password=
+
 
 **Testing with Postman
 
 GET HTTP VERB
+
 Get all Customers localhost:8080/customers
+
 Get Customer with id 1 localhost:8080/customers/1
+
 Get Customer with id 2 localhost:8080/customers/2
 
 POST HTTP VERB (set body to raw application/json)
+
 localhost:8080/customers
+
 {
 	"firstName":"Bruce",
 	"lastName":"Wayne"
 }
-After send, Bruce Wayne will be created.
 
+After send, Bruce Wayne will be created.
 
 Sample output:
 {
