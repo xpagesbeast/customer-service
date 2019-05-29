@@ -44,8 +44,8 @@ POST HTTP VERB (set body to raw application/json)
 localhost:8080/customers
 
 {
-	"firstName":"Bruce",
-	"lastName":"Wayne"
+	"name":"Walmart",
+	"address":"5454 Touhy, Niles, IL"
 }
 
 After send, Bruce Wayne will be created.
