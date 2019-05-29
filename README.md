@@ -4,11 +4,22 @@ SpringBoot Simple Customer Service App uses MySQL
 **Database setup
 
 Create a schema called 'customer'.  This will be the database.
+
 Create a table called 'customer'.  This will be the table to store the records (data).
+
+create table customer(
+id int NOT NULL AUTO_INCREMENT,
+first_name varchar(20),
+last_name varchar(20),
+PRIMARY KEY (ID)
+)
+
 Create a user called 'test' with password 'test'.  The application is setup to login with test.
+
 Give the user 'test' access to the schema 'customer'.  Use select all in MySQL Manager to allow user 'test' full access.
 
 If you already have a MySQL environment and want to use it.  Simply edit the file application.properties.
+
 spring.datasource.name=customer-datasource
 spring.datasource.url=jdbc:mysql://localhost:3306/customer?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
 spring.datasource.username=
